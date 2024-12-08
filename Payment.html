@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      .payment-container {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .payment-header {
+        text-align: center;
+        background-color: #6f42c1;
+        color: white;
+        padding: 10px 0;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .payment-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .payment-icons img {
+        height: 40px;
+        margin: 0 10px;
+      }
+
+      .confirm-btn {
+        background-color: #6f42c1;
+        color: white;
+      }
+
+      .confirm-btn:hover {
+        background-color: #5a359b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-container">
+      <div class="payment-header">
+        <h1>Payment</h1>
+      </div>
+      <div class="text-center my-3">
+        <div class="payment-icons">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_2014_logo_detail.svg"
+            alt="Visa"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+            alt="PayPal"
+          />
+        </div>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            placeholder="First Name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Last Name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cardNumber"
+            placeholder="**** **** **** ****"
+          />
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="expiryDate" class="form-label">Expire Date</label>
+            <input
+              type="text"
+              class="form-control"
+              id="expiryDate"
+              placeholder="MM/YY"
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cvc" class="form-label">CVC</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cvc"
+              placeholder="***"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="zipCode" class="form-label">Zip Code</label>
+          <input
+            type="text"
+            class="form-control"
+            id="zipCode"
+            placeholder="Zip Code"
+          />
+        </div>
+        <button type="submit" class="btn confirm-btn w-100">
+          Confirm Payment
+        </button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap.bundle.js"></script>
+  </body>
+</html>
